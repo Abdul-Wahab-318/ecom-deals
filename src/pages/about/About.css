@@ -1,0 +1,46 @@
+
+.founder-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.founder-card:hover .founder-img-wrapper  {
+    border: 8px  rgb(255, 242, 224)  solid;
+}
+.founder-img-wrapper{
+    border: 8px   #ffbc14  solid;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+}
+.founder-img-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px  white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.founder-img-inner  img {
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.social-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(222, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
