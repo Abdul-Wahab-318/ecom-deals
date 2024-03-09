@@ -6,10 +6,32 @@ import silverStar from '../../assets/silver-star.png'
 import goldStar from '../../assets/gold-star.png'
 import platinumCrown from '../../assets/platinum-crown.png'
 import clock from '../../assets/clock.png'
+import chevronLeft from '../../assets/chevron-left.png'
+import chevronRight from '../../assets/chevron-right.png'
+import LazyLoad from 'react-lazyload';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
+
+    const responsive = {
+        desktop: {
+          breakpoint: { max: 3000, min: 1440 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1399, min: 992 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 991, min: 0 },
+          items: 1
+        }
+    }
+
+
   return (
-    <div classNameName='home-page page'>
+    <div className='home-page page'>
 
         <section className="hero-section bg-gray">
             <div className="container">
@@ -47,7 +69,7 @@ export default function Home() {
                     <h6>Package Categories</h6>
                     <h1>What We Offer</h1>
                 </div>
-                <div className="services-grid  mt-5">
+                <div className="services-grid  mt-10">
                     <div className="service-card "
                     data-aos="fade-in"
                     data-aos-duration={800}
@@ -166,8 +188,51 @@ export default function Home() {
             </div>
         </section>
 
+        <section className="testimonials section-spacing">
+            <div className="container">
+                <div className="section-heading text-center">
+                    <h6>Our Customers</h6>
+                    <h1>Testimonials</h1>
+                </div>
+                <LazyLoad height={'500'}>
+                    <Carousel className='mt-10' 
+                    responsive={responsive} 
+                    infinite={true} 
+                    autoPlay={true}
+                    autoPlaySpeed={2500}
+                    customRightArrow={<CustomRightArrow/>} 
+                    customLeftArrow={<CustomLeftArrow/>} >
+                        <div className='testimonial-video-wrapper       h-[800px]'>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F787550973241625%2F&show_text=false&width=267&t=0"  width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div className='testimonial-video-wrapper       h-[800px]'>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"  width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div className='testimonial-video-wrapper       h-[800px]'>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div className='testimonial-video-wrapper       h-[800px]'>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div className='testimonial-video-wrapper   h-[800px]'>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div className='testimonial-video-wrapper   h-[800px]'>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+
+                    </Carousel>
+                </LazyLoad>
+            </div>
+        </section>
+
+
         <section className="contact-section section-spacing">
             <div className="container">
+                <div className="section-heading text-start mb-10">
+                    <h6>Need Help ?</h6>
+                    <h1>Get In Touch With Us</h1>
+                </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="contact-body-wrapper py-[56px] px-[56px] bg-yellow-light">
                         <p className="tracking-[2px] text-text-contrast text-[18px] mb-8">CONTACT US</p>
@@ -197,3 +262,22 @@ export default function Home() {
     </div>
   )
 }
+
+
+const CustomRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType }
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return <button className='slider-arrow-right slider-arrow' onClick={() => onClick()} > <img src={chevronRight} width={'40px'} alt="" /> </button>;
+  };
+
+  const CustomLeftArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType }
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return <button className='slider-arrow-left slider-arrow' onClick={() => onClick()} > <img src={chevronLeft} width={'40px'} alt="" /> </button>;
+  };

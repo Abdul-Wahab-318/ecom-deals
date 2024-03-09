@@ -142,11 +142,23 @@
 
 /* ----- SERVICES END ----- */
 
-/*---------- CONTACT SECTION START ---------- */
-.contact-wrapper {
+/*---------- TESTIOMONIALS SECTION START ---------- */
 
+.slider-arrow-right {
+    bottom: 0 !important;
+    position: absolute;
+    left: 50%;
 }
 
+.slider-arrow-left {
+    bottom: 0 !important;
+    position: absolute;
+    right: 55%;
+}
+.testimonial-video-wrapper iframe {
+    margin: 0 auto;
+    display: block;
+}
 
 /*---------- CONTACT SECTION END ---------- */
 
@@ -166,6 +178,10 @@
     }
     .hero-cta-wrapper {
         flex-direction: column;
+    }
+    .react-multicarousel-item .testimonial-video-wrapper iframe {
+        width: 100% !important;
+        height: 600px !important ;
     }
 }
 
