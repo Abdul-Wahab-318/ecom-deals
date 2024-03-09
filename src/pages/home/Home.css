@@ -147,13 +147,15 @@
 .slider-arrow-right {
     bottom: 0 !important;
     position: absolute;
-    left: 50%;
+    right: 50%;
+    transform: translateX(60px);
 }
 
 .slider-arrow-left {
     bottom: 0 !important;
     position: absolute;
-    right: 55%;
+    left: 50%;
+    transform: translateX(-60px);
 }
 .testimonial-video-wrapper iframe {
     margin: 0 auto;

@@ -48,7 +48,7 @@ export default function Header() {
             <nav className="navbar hidden md:flex">
                 <Link to="/about-us">About Us</Link>
                 <a href="#packages">Packages</a>{" "}
-                <Link to="/ambassadors">Success Stories</Link>{" "}
+                <Link to="/stories">Success Stories</Link>{" "}
                 <Link to="/contact-us">Contact Us</Link>
             </nav>
             <button
@@ -113,7 +113,7 @@ export default function Header() {
                 <h2 className="accordion-header" id="headingThree">
                     <Link
                     className="accordion-button collapsed"
-                    to="/events"
+                    to="/stories"
                     onClick={handleToggle}
                     >
                     Our Success Stories
@@ -124,7 +124,7 @@ export default function Header() {
                 <h2 className="accordion-header" id="headingFive">
                     <Link
                     className="accordion-button collapsed"
-                    to="/ambassadors"
+                    to="/contact-us"
                     onClick={handleToggle}
                     >
                     Contact Us

@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState ,useEffect} from 'react'
 import hero from '../../assets/hero-2.svg'
 import './Home.css'
 import { Link } from 'react-router-dom'
@@ -11,8 +11,31 @@ import chevronRight from '../../assets/chevron-right.png'
 import LazyLoad from 'react-lazyload';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import axios from 'axios';
+import URL from '../../api'
 
 export default function Home() {
+
+
+    const [videos , setVideos] = useState([])
+    const [isLoading , setIsLoading] = useState(false)
+
+    const fetchData = async () => {
+        try{
+            setIsLoading(true)
+            let { data } = await axios.get(URL)
+            setVideos(data.data)
+            console.log(data)
+        }
+        catch(err)
+        {
+            console.error(err)
+        }
+        finally
+        {
+            setIsLoading(false)
+        }
+    }
 
     const responsive = {
         desktop: {
@@ -28,6 +51,11 @@ export default function Home() {
           items: 1
         }
     }
+
+    React.useEffect(() => {
+        fetchData()
+    },[])
+
 
 
   return (
@@ -202,24 +230,16 @@ export default function Home() {
                     autoPlaySpeed={2500}
                     customRightArrow={<CustomRightArrow/>} 
                     customLeftArrow={<CustomLeftArrow/>} >
-                        <div className='testimonial-video-wrapper       h-[800px]'>
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F787550973241625%2F&show_text=false&width=267&t=0"  width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                        </div>
-                        <div className='testimonial-video-wrapper       h-[800px]'>
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"  width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                        </div>
-                        <div className='testimonial-video-wrapper       h-[800px]'>
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                        </div>
-                        <div className='testimonial-video-wrapper       h-[800px]'>
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                        </div>
-                        <div className='testimonial-video-wrapper   h-[800px]'>
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                        </div>
-                        <div className='testimonial-video-wrapper   h-[800px]'>
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3537947003090325%2F&show_text=false&width=267&t=0"width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                        </div>
+                        {
+                            videos.map( videoLink => {
+                                return (
+
+                                    <div className='testimonial-video-wrapper  h-[800px]'>
+                                        <iframe src={videoLink} width={'400'} height={'800'} style={{"border":"none" ,"overflow":"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                                    </div>
+                                )
+                            } )
+                        }
 
                     </Carousel>
                 </LazyLoad>
