@@ -2,6 +2,10 @@ import React from 'react'
 import hero from '../../assets/hero-2.svg'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import silverStar from '../../assets/silver-star.png'
+import goldStar from '../../assets/gold-star.png'
+import platinumCrown from '../../assets/platinum-crown.png'
+import clock from '../../assets/clock.png'
 
 export default function Home() {
   return (
@@ -37,73 +41,126 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="services section-spacing pt-5">
+        <section className="services section-spacing pt-5" id='packages'>
             <div className=" services-inner container">
                 <div className="section-heading text-center">
-                    <h6>Service Categories</h6>
+                    <h6>Package Categories</h6>
                     <h1>What We Offer</h1>
                 </div>
                 <div className="services-grid  mt-5">
-                    <div
-                    className="service-card "
+                    <div className="service-card "
                     data-aos="fade-in"
                     data-aos-duration={800}
                     >
                     <div className="service-card-inner">
-                        <img src="./images/trainings.avif" width="150px" alt="training icon" />
+                        <img src={silverStar} className='mx-auto' alt="training icon" />
+                        <h4 className="fw-bold mt-3 text-black mt-4">Silver Package</h4>
+                        <ul className='package-list'>
+                            <li><span>2 Weeks Program</span></li>
+                            <li><span> 2 hours a day on-site bootcamp</span></li>
+                            <li><span> Shopify Local & International Store Creation</span></li>
+                            <li><span> Ad Creation & Placement (Tiktok & Meta)</span></li>
+                            <li><span> Product Hunting</span></li>
+                            <li><span> Product Sourcing Strategies </span></li>
+                            <li><span> White Label vs Private Label</span></li>
+                            <li><span> Operations & Logistics </span></li>
+                            <li><span> International Dropshipping </span></li>
+                            <li><span> Guaranteed Sale Generation</span></li>
+                        </ul>
+                        <Link
+                        className="generic-btn-1 mt-4 mx-auto w-50"
+                        to="/package/silver"
+                        >
+                        Explore
+                        </Link>
+                    </div>
+                    </div>
+                    <div className="service-card "
+                    data-aos="fade-in"
+                    data-aos-duration={800}
+                    >
+                    <div className="service-card-inner">
+                        <img src={goldStar} className='mx-auto'  alt="consultancy icon" />
                         <h4 className="fw-bold mt-3 text-black mt-4">Gold Package</h4>
-                        <p>
-                        We offer best in class trainings both in Technical &amp; Non
-                        Technical Domains for individuals as well as corporates
-                        </p>
+                        <ul className='package-list'>
+                            <li><span>1 Month Program</span></li>
+                            <li><span>30 Days access to ECOM Facilities</span></li>
+                            <li><span>1x1 Mentorship (No Classroom Session)</span></li>
+                            <li><span>Shopify Local & International Store Creation</span></li>
+                            <li><span>Ad Creation & Placement (Tiktok & Meta)</span></li>
+                            <li><span>Product Hunting</span></li>
+                            <li><span>Product Sourcing Strategies</span></li>
+                            <li><span>White Label vs Private Label</span></li>
+                            <li><span>Operations & Logistics</span></li>
+                            <li><span>International Dropshipping</span></li>
+                            <li><span>Guaranteed Sale Generation</span></li>
+                        </ul>
+
                         <Link
                         className="generic-btn-1 mt-4 mx-auto w-50"
-                        to="/trainings"
+                        to="/package/gold"
                         >
                         Explore
                         </Link>
                     </div>
                     </div>
-                    <div
-                    className="service-card "
+                    <div className="service-card "
                     data-aos="fade-in"
                     data-aos-duration={800}
                     >
-                    <div className="service-card-inner">
-                        <img src="./images/consultancy.png" width="150px" alt="consultancy icon" />
-                        <h4 className="fw-bold mt-3 text-black mt-4">Platinum Package</h4>
-                        <p>
-                        We offer a range of career support from Interview Prep to resume
-                        building to support in finding the right job
-                        </p>
-                        <Link
-                        className="generic-btn-1 mt-4 mx-auto w-50"
-                        to="/counselling"
+                        <div className="service-card-inner">
+                            <img src={platinumCrown} className='mx-auto' style={{width:'100px !important'}} alt="career icon" />
+                            <h4 className="fw-bold mt-3 text-black mt-4">Platinum Package</h4>
+                            <ul className='package-list'>
+                                <li><span>1 Month Program</span></li>
+                                <li><span>30 Days access to ECOM Facilities</span></li>
+                                <li><span>1x1 Exclusive Mentorship</span></li>
+                                <li><span>Shopify Local & International Store Creation</span></li>
+                                <li><span>Ad Creation & Placement (Tiktok & Meta)</span></li>
+                                <li><span>Private Label Focused</span></li>
+                                <li><span>Influencer Access & Strategies</span></li>
+                                <li><span>Detailed Meta strategies</span></li>
+                                <li><span>Operations & Logistics</span></li>
+                                <li><span>International Dropshipping</span></li>
+                            </ul>
+                            <Link
+                            className="generic-btn-1 mt-4 mx-auto w-50"
+                            to="/package/platinum"
+                            >
+                            Explore
+                            </Link>
+                        </div>
+                    </div>
+                    <div className='d-none d-lg-none'></div>
+                    <div className="service-card" 
+                        data-aos="fade-in"
+                        data-aos-duration={800}
                         >
-                        Explore
-                        </Link>
-                    </div>
-                    </div>
-                    <div
-                    className="service-card "
-                    data-aos="fade-in"
-                    data-aos-duration={800}
-                    >
-                    <div className="service-card-inner">
-                        <img src="./images/career.png" width="150px" alt="career icon" />
-                        <h4 className="fw-bold mt-3 text-black mt-4">Platinum Package</h4>
-                        <p>
-                        {" "}
-                        We offer services to help organizations leverage technology for
-                        efficiency, productivity, and profitability.
-                        </p>
-                        <Link
-                        className="generic-btn-1 mt-4 mx-auto w-50"
-                        to="/consultancy"
-                        >
-                        Explore
-                        </Link>
-                    </div>
+                            <div className="service-card-inner">
+                                <img src={clock} className='mx-auto' alt="career icon" />
+                                <h4 className="fw-bold mt-3 text-black mt-4">Live Bootcamp</h4>
+                                <ul className='package-list'>
+                                    <li><span>3 Weeks Program</span></li>
+                                    <li><span>2 Hours Session</span></li>
+                                    <li><span>3 Days a week</span></li>
+                                    <li><span>Shopify Local & International Store Creation</span></li>
+                                    <li><span>Ad Creation & Placement (Tiktok & Meta)</span></li>
+                                    <li><span>Product Hunting</span></li>
+                                    <li><span>Product Sourcing Strategies</span></li>
+                                    <li><span>White Label vs Private Label</span></li>
+                                    <li><span>Operations & Logistics</span></li>
+                                    <li><span>Exclusive ECOM Fulfilment Support</span></li>
+                                    <li><span>Free Inventory Support</span></li>
+                                    <li><span>International Dropshipping</span></li>
+                                    <li><span>Guaranteed Sale Generation</span></li>
+                                </ul>
+                                <Link
+                                className="generic-btn-1 mt-4 mx-auto w-50"
+                                to="/package/bootcamp"
+                                >
+                                Explore
+                                </Link>
+                            </div>
                     </div>
                 </div>
             </div>

@@ -7,3 +7,6 @@
   --text: "#1B1B1B";
   --text-light: '#5E5E5E';
 }
+html{
+  scroll-behavior: smooth;
+}
