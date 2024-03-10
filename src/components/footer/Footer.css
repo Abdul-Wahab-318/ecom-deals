@@ -1,0 +1,133 @@
+
+/* ----- FOOTER  START ----- */
+
+.footer{
+    background-color: var(--purple);
+    position: relative;
+    padding: 100px 0;
+    text-align: start;
+}
+.footer p {
+    line-height: 1.6;
+}
+.footer-shape-1 {
+    position: absolute;
+    left: 80px;
+    top: 60px;
+}
+.footer-shape-2{
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+}
+.footer-social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: hsla(0,0%,100%,.1);
+    transition: all 300ms ease;
+}
+.footer-social-links a:hover{
+    background-color: var(--blue);
+}
+
+.footer-col ul li{
+    margin: 20px 0;
+    color: var(--white) ;
+}
+.footer-col ul li a {
+    color: var(--white);
+}
+.footer-col ul li a span {
+    margin-left: 10px;
+}
+.footer-col h5 {
+    font-size: 24px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.footer-col:nth-child(2)
+{
+    padding-left: 30px;
+}
+.footer-col:nth-child(3)
+{
+    padding-left: 30px;
+}
+
+.footer ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer ul li img {
+    display: inline;
+}
+@media ( min-width : 992px ) and ( max-width : 1199.8px )
+{
+    .footer-grid .footer-col {
+        padding-left: 30px;
+    }
+
+    .footer-grid .footer-col:first-child {
+        padding-left: calc(var(--bs-gutter-x) * .5) ;
+    }
+    .footer-grid .footer-col:first-child p {
+        padding-right: 0 !important;
+    }
+    .footer-social-links {
+        gap: 10px !important;
+    }
+
+}
+
+@media ( min-width : 768px ) and ( max-width : 991.8px )
+{
+    .footer-col:nth-child(2n) {
+        padding-left: 80px;
+    }
+
+}
+
+@media ( min-width : 576px ) and ( max-width : 767.8px )
+{
+    .footer {
+        padding-top: 60px;
+    }
+    .footer-col:first-child {
+        margin-bottom: 30px ;
+    }
+    .footer-col:nth-child(2) {
+        padding-left: 12px;
+    }
+    .footer-col:nth-child(3) {
+        padding-left: 12px;
+    }
+}
+
+@media  ( max-width : 575.8px )
+{
+    .footer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-col {
+        width: auto;
+        padding-left: 20px !important;
+    }
+
+    .footer-col:first-child {
+        margin-bottom: 30px ;
+    }
+
+    .footer-social-links a {
+        width: 40px;
+        height: 40px;
+
+    }
+}

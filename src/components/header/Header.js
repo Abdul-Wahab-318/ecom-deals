@@ -1,5 +1,5 @@
 import React , { useState , useEffect , useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link , useLocation, useNavigate } from 'react-router-dom'
 import './Header.css'
 import logo from '../../assets/logo.webp'
 
@@ -8,9 +8,16 @@ export default function Header() {
     let [ showMenu , setShowMenu ] = useState(false)
     let headerRef = useRef(null)
     let buttonRef = useRef(null)
+    const location = useLocation();
+    const nav = useNavigate()
 
     let handleToggle = () => {
         setShowMenu( state => !state )
+    }
+
+    const handleNav = () => {
+        if ( location.pathname !== '/' )
+            nav('/#packages')
     }
 
     useEffect(() => {
@@ -47,7 +54,7 @@ export default function Header() {
             </div>
             <nav className="navbar hidden md:flex">
                 <Link to="/about-us">About Us</Link>
-                <a href="#packages">Packages</a>{" "}
+                <a href="#packages" onClick={handleNav}>Packages</a>{" "}
                 <Link to="/stories">Success Stories</Link>{" "}
                 <Link to="/contact-us">Contact Us</Link>
             </nav>
@@ -97,7 +104,7 @@ export default function Header() {
                 </div>
                 <div className="accordion-item">
                 <h2 className="accordion-header" id="headingTwo">
-                    <a className="accordion-button collapsed" href="#packages" onClick={handleToggle}>
+                    <a className="accordion-button collapsed" href="#packages" onClick={() => { handleToggle() ; handleNav() }}>
                     Our Packages
                     </a>
                 </h2>
