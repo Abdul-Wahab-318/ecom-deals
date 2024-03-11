@@ -2,15 +2,12 @@ import React from "react"
 import "./Package.css"
 import { useParams } from "react-router-dom"
 import packages from "../../variables/packages"
-import { Link } from "react-router-dom"
 
 export default function Package() {
 
     const { id } = useParams()
-    console.log(id)
-
     let selectedPackage = packages.find( el => el.name === id  )
-
+  
   return (
     <section className="selectedPackage-detail section-spacing">
       <div className="container">
@@ -48,21 +45,21 @@ export default function Package() {
             <div className="selectedPackage-detail-right-inner px-[100px] lg:px-0">
               <div className="selectedPackage-video-wrapper ">
                 {
-                  <img src={require('../../assets/silver-package.webp')} className="rounded" width="100%" alt="" />
+                  <img src={selectedPackage.imgSrc} className="rounded" width="100%" alt="" />
                 }
               </div>
-              <Link
-                to={"/price-plan/" + selectedPackage.slug}
-                className="generic-btn-1 price-btn mt-4"
+              <a
+                href={selectedPackage.formLink}
+                className="generic-btn-1 price-btn mt-4 bg-yellow-light"
               >
-                Fee: {selectedPackage.fee.toLocaleString()}
-              </Link>
-              <Link
-                to={"/price-plan/" + selectedPackage.slug}
-                className="generic-btn-1 mt-3"
+                Fee: PKR {selectedPackage.fee.toLocaleString()}
+              </a>
+              <a
+                href={selectedPackage.formLink}
+                className="generic-btn-1 mt-3 bg-black text-yellow"
               >
                 Reserve Your Seat
-              </Link>
+              </a>
             </div>
           </div>
         </div>

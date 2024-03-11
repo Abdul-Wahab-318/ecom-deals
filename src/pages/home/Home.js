@@ -8,7 +8,7 @@ import platinumCrown from '../../assets/platinum-crown.png'
 import clock from '../../assets/clock.png'
 import chevronLeft from '../../assets/chevron-left.png'
 import chevronRight from '../../assets/chevron-right.png'
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import axios from 'axios';
@@ -222,7 +222,7 @@ export default function Home() {
                     <h6>Our Customers</h6>
                     <h1>Testimonials</h1>
                 </div>
-                <LazyLoad height={'500'}>
+                {/* <LazyLoad height={'500'}> */}
                     <Carousel className='mt-10' 
                     responsive={responsive} 
                     infinite={true} 
@@ -242,7 +242,7 @@ export default function Home() {
                         }
 
                     </Carousel>
-                </LazyLoad>
+                {/* </LazyLoad> */}
             </div>
         </section>
 

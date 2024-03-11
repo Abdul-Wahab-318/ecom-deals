@@ -1,8 +1,8 @@
 const packages = [
     {
         name : 'silver' ,
-        fee : 20000 ,
-        imgSrc : './images/silver-package.webp' ,
+        fee : 55000 ,
+        imgSrc : '/images/silver-package.jpeg' ,
         outline : [
             "2 Weeks Program",
             "2 hours a day on-site bootcamp",
@@ -15,12 +15,13 @@ const packages = [
             "International Dropshipping",
             "Guaranteed Sale Generation"
         ] ,
-        overview : `The "2 Weeks E-commerce Accelerator Program" is an intensive and focused training initiative designed to equip participants with the essential skills and knowledge needed to succeed in the dynamic world of e-commerce. The program is structured to provide a comprehensive understanding of key aspects related to online retail, spanning from store creation to effective marketing and operational strategies.` 
+        overview : `The 2 Week program focuses on individuals in a 1x1 scenario, starting with shopify store creation, domain mapping. Product Hunting and creative creation. Ad Placement via Tiktok and Meta Platforms. At the end of the program the individual has a successful E-Commerce business and is able to understand all modalities of this business from product hunting to order fulfilment and is generating revenue. With exclusive partnership with Zambezi in UAE, individuals are also taught how to successfully run their E-Commerce business in Middle East and earn in Dirhams while sitting in Pakistan.` ,
+        formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
     } ,
     {
         name : 'gold' ,
-        fee : 20000 ,
-        imgSrc : './images/silver-package.webp' ,
+        fee : 89000 ,
+        imgSrc : '/images/gold-package.jpeg' ,
         outline : [
             "1 Month Program",
             "30 Days access to ECOM Facilities",
@@ -34,12 +35,13 @@ const packages = [
             "International Dropshipping",
             "Guaranteed Sale Generation"
           ] ,
-        overview : `The "1 Month E-commerce Mastery Program" is an immersive and flexible learning experience tailored for individuals seeking a comprehensive understanding of the e-commerce ecosystem. This program offers an extended timeframe of 30 days, providing participants with exclusive access to ECOM facilities and personalized 1x1 mentorship without traditional classroom sessions. ` 
+        overview : `The 1 month (30 day) program is designed for individuals who are serious about setting up their online business. This program is tailored to deliver a 1x1 training to each individual when they come. There is no time limitation on the program. Individuals are taught shopify store creation, designing, product placements. In-Depth focus on product hunting and how to create an ad for digital space. In-Depth order fulfilment is also taught during the program. At the end of this program individual has a successful E-Commerce business and is generating revenue. With exclusive partnership with Zambezi in UAE, individuals are also taught how to successfully run their E-Commerce business in Middle East and earn in Dirhams while sitting in Pakistan. ` ,
+        formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
     } ,
     {
         name : 'platinum' ,
-        fee : 20000 ,
-        imgSrc : './images/silver-package.webp' ,
+        fee : 150000 ,
+        imgSrc : '/images/platinum-package.jpeg' ,
         outline : [
             "1 Month Program",
             "30 Days access to ECOM Facilities",
@@ -52,12 +54,13 @@ const packages = [
             "Operations & Logistics",
             "International Dropshipping"
           ] ,
-        overview : `The "1 Month E-commerce Mastery Program" is an immersive and flexible learning experience tailored for individuals seeking a comprehensive understanding of the e-commerce ecosystem. This program offers an extended timeframe of 30 days, providing participants with exclusive access to ECOM facilities and personalized 1x1 mentorship without traditional classroom sessions. ` 
+        overview : `The 1 month (30 day) platinum program is 1x1 mentorship with our senior trainers and focuses on private label. From store creation to brand development to Influencer Marketing everything is taught hands-on. Special focus on various marketing techniques on Meta and Tiktok platforms on how to bring your brand to life in the digital space. There is no time limitation on this program during the month and session progresses as and when the individual is available. ` ,
+        formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
     } ,
     {
         name : 'bootcamp' ,
-        fee : 20000 ,
-        imgSrc : './images/silver-package.webp' ,
+        fee : 35000 ,
+        imgSrc : '/images/bootcamp-package.jpeg' ,
         outline :[
             "3 Weeks Program",
             "2 Hours Session",
@@ -73,7 +76,8 @@ const packages = [
             "International Dropshipping",
             "Guaranteed Sale Generation"
           ] ,
-        overview : `The "3 Weeks E-commerce Accelerator Program" is a condensed and focused training initiative designed to provide participants with a rapid yet comprehensive understanding of key elements in the world of e-commerce. The program spans over 3 weeks, with 2-hour sessions held three days a week, covering essential topics to empower participants for success ` 
+        overview : `This 3 weeks program is designed to teach complete E-Commerce business in set of interactive live sessions. During these sessions the individuals are taught shopify store creation, product addition, product hunting, creative placement on different social platforms including Meta and Tiktok. Exclusively for these individuals ECOM Deals will provide free fulfilment services all across Pakistan and in UAE by Zambezi (Exclusive Partner). At the end of this course, the individual has a running E-Commerce business.` ,
+        formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
     }
 
 
