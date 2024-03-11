@@ -7,7 +7,7 @@ export default function Package() {
 
     const { id } = useParams()
     let selectedPackage = packages.find( el => el.name === id  )
-  
+
   return (
     <section className="selectedPackage-detail section-spacing">
       <div className="container">
@@ -42,7 +42,7 @@ export default function Package() {
             </main>
           </div>
           <div className="selectedPackage-detail-right col-lg-4 px-xl-4 mt-10 lg:mt-0">
-            <div className="selectedPackage-detail-right-inner px-[100px] lg:px-0">
+            <div className="selectedPackage-detail-right-inner  lg:px-0">
               <div className="selectedPackage-video-wrapper ">
                 {
                   <img src={selectedPackage.imgSrc} className="rounded" width="100%" alt="" />

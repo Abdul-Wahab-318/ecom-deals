@@ -2,6 +2,7 @@ import React , { useState , useEffect , useRef } from 'react'
 import { Link , useLocation, useNavigate } from 'react-router-dom'
 import './Header.css'
 import logo from '../../assets/logo.webp'
+import menuIcon from '../../assets/menu.png'
 
 export default function Header() {
 
@@ -66,7 +67,7 @@ export default function Header() {
                 aria-label='Toggle navigation'
                 aria-controls="mobileMenu"
             >
-                <img src="./images/menu.png" width="17px" alt="menu icon" />
+                <img src={menuIcon} width="17px" alt="menu icon" />
             </button>
             </div>
         </header>
