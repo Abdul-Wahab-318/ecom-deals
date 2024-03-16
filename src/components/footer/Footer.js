@@ -16,10 +16,7 @@ export default function Footer() {
           <div className=" footer-col  pt-4">
             <h5 className="mb-8 font-bold">Find Us</h5>
             <p className="mb-8 text-black text-semibold pe-5">
-              We provide Trainings, Career Guidance &amp; Consultancy in
-              Technology &amp; Non Technology Domains. With 1,000+ professional
-              trained and over 65% Job placement ratio, we are transforming
-              Pakistan's IT Landscape
+            At Ecom Deals, we specialize in e-commerce solutions, offering tailored strategies to cash up your investments, and providing comprehensive e-commerce training. Our mission is to empower our clients with the knowledge and tools they need to succeed in both local and international e-commerce markets.
             </p>
             <div className="footer-social-links flex items-center gap-3">
               <a
@@ -92,7 +89,7 @@ export default function Footer() {
             <h5 className="mb-4 font-bold">Contact Info</h5>
             <ul className="pt-2">
               <li className="mt-0">
-                <a href="https://www.facebook.com/transformatics.pk/">
+                <a href="https://www.facebook.com/ecomdealspk/">
                   <img
                     src="/images/location.png"
                     width="17px"

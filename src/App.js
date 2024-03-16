@@ -9,6 +9,7 @@ import Stories from './pages/stories/Stories';
 import Package from './pages/package/Package';
 import Footer from './components/footer/Footer'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       </Routes>
       <Footer/>
       <ScrollToTop />
+      <WhatsAppButton/>
     </div>
   );
 }

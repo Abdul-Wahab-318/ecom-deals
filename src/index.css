@@ -73,3 +73,10 @@ body {
 .section-spacing{
   padding: 100px 0;
 }
+
+.whatsapp-cta {
+  bottom: 30px;
+  position: fixed;
+  right: 30px;
+  z-index: 5;
+}
