@@ -13,6 +13,7 @@ import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import axios from "axios"
 import URL from "../../api"
+import StatCards from "../../components/StatCards/StatCards"
 
 export default function Home() {
   const [videos, setVideos] = useState([])
@@ -123,7 +124,62 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services section-spacing pt-5" id="packages">
+      <section className="choose-us section-spacing">
+            <div className="container">
+                <div className="row grid grid-cols-1 lg:grid-cols-2 gap-4" >
+                    <div className="col-xl-6">
+                        <div className="section-heading ">
+                            <h6>Why Choose Us</h6>
+                            <h1>Learn From The Best In The Industry</h1>
+                        </div>
+                        <div className="choose-us-content">
+                            <p className="mt-5 text-gray " style={{ textAlign: "justify" }}>
+                            Transformatics Pvt Ltd offers high-quality training programs and
+                            IT consultancy services to bridge the gap between academia and the
+                            industry. Our unique approach trains individuals on relevant tools
+                            and technologies, providing in-depth understanding of the
+                            industry, and making them job-ready from day one. <br /> <br /> We
+                            also offer corporate training programs leading to certification
+                            paths to help companies improve the skills and knowledge of their
+                            staff, leading to increased productivity and a competitive edge in
+                            the market.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="items-center flex flex-col justify-center" data-aos="fade-in" data-aos-duration={1000}>
+                        <div className="choose-us-highlights flex items-center gap-5 xl:mt-8">
+                            <div className="choose-us-rounded-wrapper ">
+                            <img src="./images/choose-1.png" width="38px" alt="" />
+                            </div>
+                            <h5 className="text-purple fw-bold">
+                            Cutting-edge IT Training and Consultancy Services
+                            </h5>
+                        </div>
+                        <div className="choose-us-highlights flex items-center gap-3 mt-4" data-aos="fade-in"
+                        >
+                            <div className="choose-us-rounded-wrapper ">
+                            <img src="./images/choose-2.png" width="39px" alt="" />
+                            </div>
+                            <h5 className="text-purple fw-bold">
+                            Elevate Your Team's Skills and Productivity
+                            </h5>
+                        </div>
+                    <div className="choose-us-highlights flex items-center gap-3 mt-4" data-aos="fade-in">
+                        <div className="choose-us-rounded-wrapper ">
+                        <img src="./images/choose-3.png" width="39px" alt="" />
+                        </div>
+                        <h5 className="text-purple fw-bold">
+                        Partnerships with major Corporations
+                        </h5>
+                    </div>
+                    </div>
+                </div>
+                <StatCards/>
+            </div>
+        </section>
+
+
+      <section className="services section-spacing" id="packages">
         <div className=" services-inner container">
           <div className="section-heading text-center">
             <h6>Package Categories</h6>
@@ -311,33 +367,34 @@ export default function Home() {
          <div className="section-heading text-center">
             <h6>Our Partners</h6>
             <h1>Partnerships</h1>
+          </div>
             <Carousel
             className="mt-10"
             responsive={partnersResponsive}
             infinite={true}
             autoPlay={false}
-            containerClass="pt-[60px] pb-[140px]"
+            containerClass="pt-[60px] pb-[140px] partner-slide"
+            itemClass="flex-center"
             autoPlaySpeed={2500}
             customRightArrow={<CustomRightArrow />}
             customLeftArrow={<CustomLeftArrow />}
           >
             <div >
-              <img src="./images/whatsapp.png" className="mx-auto" width={'200px'} alt="" />
+              <img src="./images/partner-1.jpeg" className="mx-auto" width={'270px'} alt="" />
             </div>
             <div>
-              <img src="./images/whatsapp.png" className="mx-auto" width={'200px'} alt="" />
+              <img src="./images/partner-2.jpeg" className="mx-auto" width={'200px'} alt="" />
             </div>
             <div>
-              <img src="./images/whatsapp.png" className="mx-auto" width={'200px'} alt="" />
+              <img src="./images/partner-3.jpeg" className="mx-auto" width={'200px'} alt="" />
             </div>
             <div>
-              <img src="./images/whatsapp.png" className="mx-auto" width={'200px'} alt="" />
+              <img src="./images/partner-4.jpeg" className="mx-auto" width={'200px'} alt="" />
             </div>
             <div>
-              <img src="./images/whatsapp.png" className="mx-auto" width={'200px'} alt="" />
+              <img src="./images/partner-5.png" className="mx-auto" width={'200px'} alt="" />
             </div>
           </Carousel>
-          </div>
         </div>
       </section>
 

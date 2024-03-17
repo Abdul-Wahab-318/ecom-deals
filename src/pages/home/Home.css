@@ -150,6 +150,51 @@
 
 /* ----- SERVICES END ----- */
 
+
+/* ----- CHOOSE US START ----- */
+.choose-us {
+    /* background-image: url(.././public/images/home-two-about-us.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+.choose-us-feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    row-gap: 25px;
+}
+.choose-us-feature-list p {
+    font-weight: 600;
+}
+.choose-us-feature-list > div {
+    background-color: var(--white);
+    box-shadow: 0 8px 30px rgb(0 0 0 / 6%);
+    border-radius: 5px;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.choose-us-highlights h5 {
+    margin-bottom: 0;
+}
+.choose-us-rounded-wrapper{
+    background-color: var(--blue);
+    width: 70px !important;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-us-rounded-wrapper img {
+    width: 44px ;
+}
+/* ----- CHOOSE US END ----- */
+
 /*---------- TESTIOMONIALS SECTION START ---------- */
 
 .slider-arrow-right {
@@ -193,19 +238,29 @@
         width: 100% !important;
         height: 600px !important ;
     }
+
+    
+    .choose-us-feature-list {
+        padding-right: 0;
+        grid-template-columns: 1fr !important;
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 767.98px) { 
 
+    .choose-us {
+        padding-top: 70px !important;
+    }
     .hero-content .row .col-lg-6:nth-child(2)
     {
         padding-bottom: 30px;
     }
     .section-heading h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
     .section-heading h6 {
-        font-size: 12px;
+        font-size: 16px;
     }
     .section-spacing {
         padding: 60px 0;
@@ -239,7 +294,9 @@
     .section-spacing {
         padding-top: 50px;
     }
-
+    .choose-us {
+        padding-top: 100px;
+    }
     .hero-content > div > div:nth-of-type(2){
         display: flex;
         flex-direction: column;
@@ -275,6 +332,19 @@
         
     }
 
+    .choose-us-feature-list {
+        padding-right: 0;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 60px;
+    }
+
+    .choose-us div .row {
+        flex-direction: column-reverse;
+    }
+    .choose-us-content {
+        margin-bottom: 60px;
+    }
+
 }
 
 @media (max-width: 1199.98px) {
@@ -291,6 +361,16 @@
 
     .play-btn-wrapper span {
         display: none;
+    }
+
+    .choose-us-feature-list {
+        padding-right: 0;
+    }
+    .choose-us div .row {
+        flex-direction: column-reverse;
+    }
+    .choose-us-content {
+        margin-bottom: 60px;
     }
 
 }
@@ -319,3 +399,4 @@
 
 
 }
+
