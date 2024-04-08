@@ -3,10 +3,66 @@ import './About.css'
 import umar from "../../assets/umer-afzal.jpg"
 import shoaib from "../../assets/malik-shoaib.jpeg"
 import linkedin from "../../assets/linkedin.png"
+import StatCards from '../../components/StatCards/StatCards'
 
 export default function About() {
   return (
     <div className='about-page page '>
+
+        <section className="choose-us section-spacing">
+            <div className="container">
+                <div className="row grid grid-cols-1 xl:grid-cols-2 gap-12 justify-content-between" >
+                    <div className="col-xl-6">
+                        <div className="section-heading ">
+                            <h6>Why Choose Us</h6>
+                            <h1>Learn From The Best In The Industry</h1>
+                        </div>
+                        <div className="choose-us-content">
+                            <p className="mt-5 text-gray " style={{ textAlign: "justify" }}>
+                            Transformatics Pvt Ltd offers high-quality training programs and
+                            IT consultancy services to bridge the gap between academia and the
+                            industry. Our unique approach trains individuals on relevant tools
+                            and technologies, providing in-depth understanding of the
+                            industry, and making them job-ready from day one. <br /> <br /> We
+                            also offer corporate training programs leading to certification
+                            paths to help companies improve the skills and knowledge of their
+                            staff, leading to increased productivity and a competitive edge in
+                            the market.
+                            </p>
+                        </div>
+                    </div>
+                    <div className=" flex flex-col justify-center" data-aos="fade-in" data-aos-duration={1000}>
+                        <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-5 xl:mt-8">
+                            <div className="choose-us-rounded-wrapper ">
+                            <img src="./images/phone.png" width="30px" alt="" />
+                            </div>
+                            <h5 className="text-purple text-lg lg:text-xl font-bold">
+                            Cutting-edge IT Training and Consultancy Services
+                            </h5>
+                        </div>
+                        <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-3 mt-4" data-aos="fade-in"
+                        >
+                            <div className="choose-us-rounded-wrapper ">
+                            <img src="./images/phone.png" width="30px" alt="" />
+                            </div>
+                            <h5 className="text-purple text-lg lg:text-xl font-bold">
+                            Elevate Your Team's Skills and Productivity
+                            </h5>
+                        </div>
+                    <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-3 mt-4" data-aos="fade-in">
+                        <div className="choose-us-rounded-wrapper ">
+                        <img src="./images/phone.png" width="30px" alt="" />
+                        </div>
+                        <h5 className="text-purple text-lg lg:text-xl font-bold">
+                        Partnerships with major Corporations
+                        </h5>
+                    </div>
+                    </div>
+                </div>
+                <StatCards/>
+            </div>
+        </section>
+
         <section className="vision section-spacing pt-0">
             <div className="vision-inner ">
                 <div className="vision-statement-parent container">

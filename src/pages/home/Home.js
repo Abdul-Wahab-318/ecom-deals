@@ -1,19 +1,23 @@
 import React, { useState, useEffect } from "react"
-import hero from "../../assets/hero-2.svg"
 import "./Home.css"
 import { Link } from "react-router-dom"
+import Carousel from "react-multi-carousel"
 import silverStar from "../../assets/silver-star.png"
 import goldStar from "../../assets/gold-star.png"
 import platinumCrown from "../../assets/platinum-crown.png"
 import clock from "../../assets/clock.png"
 import chevronLeft from "../../assets/chevron-left.png"
 import chevronRight from "../../assets/chevron-right.png"
-// import LazyLoad from 'react-lazyload';
-import Carousel from "react-multi-carousel"
+import hero from "../../assets/hero-2.svg"
+import orderFulfillment from "../../assets/order-fulfillment.png"
+import shopify from "../../assets/shopify.png"
+import packaging from "../../assets/packaging.png"
+import marketing from "../../assets/marketing.png"
+import statistics from "../../assets/statistics.png"
+import creative from "../../assets/creative.png"
 import "react-multi-carousel/lib/styles.css"
 import axios from "axios"
 import URL from "../../api"
-import StatCards from "../../components/StatCards/StatCards"
 
 export default function Home() {
   const [videos, setVideos] = useState([])
@@ -124,60 +128,43 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="choose-us section-spacing">
-            <div className="container">
-                <div className="row grid grid-cols-1 lg:grid-cols-2 gap-4" >
-                    <div className="col-xl-6">
-                        <div className="section-heading ">
-                            <h6>Why Choose Us</h6>
-                            <h1>Learn From The Best In The Industry</h1>
-                        </div>
-                        <div className="choose-us-content">
-                            <p className="mt-5 text-gray " style={{ textAlign: "justify" }}>
-                            Transformatics Pvt Ltd offers high-quality training programs and
-                            IT consultancy services to bridge the gap between academia and the
-                            industry. Our unique approach trains individuals on relevant tools
-                            and technologies, providing in-depth understanding of the
-                            industry, and making them job-ready from day one. <br /> <br /> We
-                            also offer corporate training programs leading to certification
-                            paths to help companies improve the skills and knowledge of their
-                            staff, leading to increased productivity and a competitive edge in
-                            the market.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="items-center flex flex-col justify-center" data-aos="fade-in" data-aos-duration={1000}>
-                        <div className="choose-us-highlights flex items-center gap-5 xl:mt-8">
-                            <div className="choose-us-rounded-wrapper ">
-                            <img src="./images/choose-1.png" width="38px" alt="" />
-                            </div>
-                            <h5 className="text-purple fw-bold">
-                            Cutting-edge IT Training and Consultancy Services
-                            </h5>
-                        </div>
-                        <div className="choose-us-highlights flex items-center gap-3 mt-4" data-aos="fade-in"
-                        >
-                            <div className="choose-us-rounded-wrapper ">
-                            <img src="./images/choose-2.png" width="39px" alt="" />
-                            </div>
-                            <h5 className="text-purple fw-bold">
-                            Elevate Your Team's Skills and Productivity
-                            </h5>
-                        </div>
-                    <div className="choose-us-highlights flex items-center gap-3 mt-4" data-aos="fade-in">
-                        <div className="choose-us-rounded-wrapper ">
-                        <img src="./images/choose-3.png" width="39px" alt="" />
-                        </div>
-                        <h5 className="text-purple fw-bold">
-                        Partnerships with major Corporations
-                        </h5>
-                    </div>
-                    </div>
-                </div>
-                <StatCards/>
+      <section className="what-we-do section-spacing">
+        <div className="container">
+          <div className="section-heading text-center">
+            <h6>Our Services</h6>
+            <h1>What We Do</h1>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+            <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
+              <div><img src={marketing} className="inline" width={'100px'} alt="" /></div>
+              <h3 className="text-xl font-bold "> Digital Marketing using Meta & Tiktok </h3>
             </div>
-        </section>
+            <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
+              <div><img src={creative} className="inline" width={'140px'} alt="" /></div>
+              <h3 className="text-xl font-bold ">Help you make your own creative</h3>
+            </div>
+            <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
+              <div><img src={statistics } className="inline" width={'140px'} alt="" /></div>
+              <h3 className="text-xl font-bold ">Reduce return ratio</h3>
+            </div>
 
+            <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
+                <div><img src={orderFulfillment} className="inline" width={'140px'} alt="" /></div>
+                <h3 className="text-xl font-bold ">Order Fullfilment</h3>
+            </div>
+            <div className="hidden xl:block"></div>
+            <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
+              <div><img src={packaging} className="inline" style={{maxWidth : '90px'}} alt="" /></div>
+              <h3 className="text-xl font-bold ">Packaging and Tracking</h3>
+            </div>
+            <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
+              <div><img src={shopify} className="inline" width={'100px'} alt="" /></div>
+              <h3 className="text-xl font-bold">Shopify Local & International Store Building</h3>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
       <section className="services section-spacing" id="packages">
         <div className=" services-inner container">
@@ -200,8 +187,6 @@ export default function Home() {
             >
               <div
                 className="service-card "
-                data-aos="fade-in"
-                data-aos-duration={800}
               >
                 <div className="service-card-inner">
                   <div>
@@ -231,8 +216,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="service-card "
-                data-aos="fade-in"
-                data-aos-duration={800}
               >
                 <div className="service-card-inner">
                     <div>
@@ -264,12 +247,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="service-card "
-                data-aos="fade-in"
-                data-aos-duration={800}
               >
                 <div className="service-card-inner">
-                    <div>
-                        
+                    <div>       
                         <img
                             src={platinumCrown}
                             className="mx-auto"
@@ -309,8 +289,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="service-card"
-                data-aos="fade-in"
-                data-aos-duration={800}
               >
                 <div className="service-card-inner">
                     <div>
@@ -354,7 +332,6 @@ export default function Home() {
                 <li> Operations & Logistics</li>
                 <li> International Dropshipping</li>
                 <li> Guaranteed Sale Generation</li>
-              
                 </ul>
               </div>
             </div>

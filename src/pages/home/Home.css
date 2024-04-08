@@ -64,9 +64,26 @@
 		box-shadow: 0 0 0 0 rgb(255, 242, 224);
 	}
 }
+.grid-card {
+    gap: 20px;
+}
+.grid-card > div {
+    background-color: white ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.grid-card > div > img {
+    width: 100% ;
 
-
-
+}
+.grid-card:last-of-type img {
+    max-width: 90px !important;
+}
 /* ----- SERVICES START ----- */
 .services-grid {
     display: grid;
@@ -182,16 +199,16 @@
     margin-bottom: 0;
 }
 .choose-us-rounded-wrapper{
-    background-color: var(--blue);
-    width: 70px !important;
-    height: 70px;
+    background-color: rgb(255 242 224 / 1 ) ;
+    width: 60px !important;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .choose-us-rounded-wrapper img {
-    width: 44px ;
+    width: 24px ;
 }
 /* ----- CHOOSE US END ----- */
 
@@ -341,9 +358,7 @@
     .choose-us div .row {
         flex-direction: column-reverse;
     }
-    .choose-us-content {
-        margin-bottom: 60px;
-    }
+
 
 }
 
@@ -369,9 +384,7 @@
     .choose-us div .row {
         flex-direction: column-reverse;
     }
-    .choose-us-content {
-        margin-bottom: 60px;
-    }
+
 
 }
 
