@@ -1,6 +1,7 @@
 const packages = [
     {
-        name : 'silver' ,
+        name : 'Silver Package' ,
+        slug : 'silver' ,
         fee : 55000 ,
         imgSrc : '/images/silver-package.jpeg' ,
         outline : [
@@ -19,7 +20,8 @@ const packages = [
         formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
     } ,
     {
-        name : 'gold' ,
+        name : 'Gold Package' ,
+        slug : 'gold' ,
         fee : 89000 ,
         imgSrc : '/images/gold-package.jpeg' ,
         outline : [
@@ -39,7 +41,8 @@ const packages = [
         formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
     } ,
     {
-        name : 'platinum' ,
+        name : 'Platinum Package' ,
+        slug : 'platinum' ,
         fee : 150000 ,
         imgSrc : '/images/platinum-package.jpeg' ,
         outline : [
@@ -58,7 +61,8 @@ const packages = [
         formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
     } ,
     {
-        name : 'bootcamp' ,
+        name : 'Live Bootcamp' ,
+        slug : 'bootcamp' ,
         fee : 35000 ,
         imgSrc : '/images/bootcamp-package.jpeg' ,
         outline :[
@@ -78,6 +82,16 @@ const packages = [
           ] ,
         overview : `This 3 weeks program is designed to teach complete E-Commerce business in set of interactive live sessions. During these sessions the individuals are taught shopify store creation, product addition, product hunting, creative placement on different social platforms including Meta and Tiktok. Exclusively for these individuals ECOM Deals will provide free fulfilment services all across Pakistan and in UAE by Zambezi (Exclusive Partner). At the end of this course, the individual has a running E-Commerce business.` ,
         formLink : 'https://forms.gle/kYMJLRoaEqrtFfkr6'
+    } ,
+    {
+        name : 'Tiktok Shop' ,
+        slug : 'tiktok' ,
+        fee : 0 ,
+        imgSrc : '/images/bootcamp-package.jpeg' ,
+        outline :[] ,
+        overview : `Coming Soon` ,
+        formLink : '' ,
+        comingSoon : true
     }
 
 

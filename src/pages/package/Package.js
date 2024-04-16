@@ -6,13 +6,21 @@ import packages from "../../variables/packages"
 export default function Package() {
 
     const { id } = useParams()
-    let selectedPackage = packages.find( el => el.name === id  )
+    let selectedPackage = packages.find( el => el.slug === id  )
+
+    if ( selectedPackage.comingSoon )
+      return (
+      <div className="container section-spacing flex justify-content-center 
+      items-center text-center min-h-[calc(100vh-120px)] md:min-h-[calc(100vh-76px)]">
+        <h1 className="w-full text-5xl font-bold">Coming Soon</h1>
+      </div> 
+      )
 
   return (
     <section className="selectedPackage-detail section-spacing">
       <div className="container">
         <div className="selectedPackage-detail-header d-block d-lg-none mt-5">
-          <h1 className="text-purple font-bold text-4xl">{ selectedPackage.name[0].toLocaleUpperCase() + selectedPackage.name.slice(1) + " Package"}</h1>
+          <h1 className="text-purple font-bold text-4xl">{ selectedPackage.name }</h1>
         </div>
         <div className="selectedPackage-detail-content grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-10">
           <div className="selectedPackage-detail-left col-lg-8">

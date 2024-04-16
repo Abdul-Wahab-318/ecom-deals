@@ -80,7 +80,7 @@ export default function Footer() {
               <li>
                 <Link to="/package/bootcamp">
                   <img src="/images/double-arrow.png" width="17px" alt="->" />
-                  <span>Bootcamp</span>
+                  <span>Live Bootcamp</span>
                 </Link>
               </li>
             </ul>

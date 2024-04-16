@@ -4,6 +4,9 @@ import umar from "../../assets/umer-afzal.jpg"
 import shoaib from "../../assets/malik-shoaib.jpeg"
 import linkedin from "../../assets/linkedin.png"
 import StatCards from '../../components/StatCards/StatCards'
+import partnership from '../../assets/partnership-black.png'
+import group from '../../assets/group.png'
+import building from '../../assets/building.png'
 
 export default function About() {
   return (
@@ -34,7 +37,7 @@ export default function About() {
                     <div className=" flex flex-col justify-center" data-aos="fade-in" data-aos-duration={1000}>
                         <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-5 xl:mt-8">
                             <div className="choose-us-rounded-wrapper ">
-                            <img src="./images/phone.png" width="30px" alt="" />
+                            <img src={building} width="40px" alt="" />
                             </div>
                             <h5 className="text-purple text-lg lg:text-xl font-bold">
                             Cutting-edge IT Training and Consultancy Services
@@ -43,20 +46,20 @@ export default function About() {
                         <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-3 mt-4" data-aos="fade-in"
                         >
                             <div className="choose-us-rounded-wrapper ">
-                            <img src="./images/phone.png" width="30px" alt="" />
+                            <img src={group} width="30px" alt="" />
                             </div>
                             <h5 className="text-purple text-lg lg:text-xl font-bold">
                             Elevate Your Team's Skills and Productivity
                             </h5>
                         </div>
-                    <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-3 mt-4" data-aos="fade-in">
-                        <div className="choose-us-rounded-wrapper ">
-                        <img src="./images/phone.png" width="30px" alt="" />
+                        <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-3 mt-4" data-aos="fade-in">
+                            <div className="choose-us-rounded-wrapper ">
+                            <img src={partnership} width="30px" alt="" />
+                            </div>
+                            <h5 className="text-purple text-lg lg:text-xl font-bold">
+                            Partnerships with major Corporations
+                            </h5>
                         </div>
-                        <h5 className="text-purple text-lg lg:text-xl font-bold">
-                        Partnerships with major Corporations
-                        </h5>
-                    </div>
                     </div>
                 </div>
                 <StatCards/>

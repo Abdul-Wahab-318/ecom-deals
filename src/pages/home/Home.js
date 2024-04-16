@@ -3,6 +3,7 @@ import "./Home.css"
 import { Link } from "react-router-dom"
 import Carousel from "react-multi-carousel"
 import silverStar from "../../assets/silver-star.png"
+import tiktok from "../../assets/tiktok.png"
 import goldStar from "../../assets/gold-star.png"
 import platinumCrown from "../../assets/platinum-crown.png"
 import clock from "../../assets/clock.png"
@@ -185,9 +186,7 @@ export default function Home() {
               itemClass="px-[10px] lg:px-[25px]"
               
             >
-              <div
-                className="service-card "
-              >
+              <div className="service-card " >
                 <div className="service-card-inner">
                   <div>
                     <img
@@ -195,7 +194,7 @@ export default function Home() {
                       className="mx-auto"
                       alt="training icon"
                     />
-                    <h4 className="fw-bold mt-3 text-black mt-4">
+                    <h4 className="fw-bold mt-3 text-black mt-4 font-semibold">
                       Silver Package
                     </h4>
                   </div>
@@ -215,8 +214,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="service-card "
-              >
+              <div className="service-card ">
                 <div className="service-card-inner">
                     <div>
                         <img
@@ -224,7 +222,7 @@ export default function Home() {
                             className="mx-auto"
                             alt="consultancy icon"
                         />
-                        <h4 className="fw-bold mt-3 text-black mt-4">Gold Package</h4>
+                        <h4 className="fw-bold mt-3 text-black mt-4 font-semibold">Gold Package</h4>
                     </div>
                   <ul className="package-list">
                     <li>
@@ -256,7 +254,7 @@ export default function Home() {
                             style={{ width: "100px !important" }}
                             alt="career icon"
                         />
-                        <h4 className="fw-bold mt-3 text-black mt-4">
+                        <h4 className="fw-bold mt-3 text-black mt-4 font-semibold">
                             Platinum Package
                         </h4>
                     </div>
@@ -288,12 +286,11 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="service-card"
-              >
+              <div className="service-card" >
                 <div className="service-card-inner">
                     <div>
                         <img src={clock} className="mx-auto" alt="career icon" />
-                        <h4 className="fw-bold mt-3 text-black mt-4">
+                        <h4 className="fw-bold mt-3 text-black mt-4 font-semibold">
                             Live Bootcamp
                         </h4>
                     </div>
@@ -314,6 +311,27 @@ export default function Home() {
                   <Link
                     className="generic-btn-1 mt-2 mx-auto w-50"
                     to="/package/bootcamp"
+                  >
+                    Explore
+                  </Link>
+                </div>
+              </div>
+              <div className="service-card">
+                <div className="service-card-inner">
+                    <div>
+                        <img src={tiktok} className="mx-auto" alt="career icon" />
+                        <h4 className="fw-bold mt-3 text-black mt-4 font-semibold">
+                          Tiktok Shop
+                        </h4>
+                    </div>
+                  <ul className="package-list">
+                    <li>
+                      <span>Coming Soon</span>
+                    </li>
+                  </ul>
+                  <Link
+                    className="generic-btn-1 mt-2 mx-auto w-50"
+                    to="/package/tiktok"
                   >
                     Explore
                   </Link>

@@ -200,15 +200,15 @@
 }
 .choose-us-rounded-wrapper{
     background-color: rgb(255 242 224 / 1 ) ;
-    width: 60px !important;
-    height: 60px;
+    width: 75px !important;
+    height: 75px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .choose-us-rounded-wrapper img {
-    width: 24px ;
+    width: 40px ;
 }
 /* ----- CHOOSE US END ----- */
 
