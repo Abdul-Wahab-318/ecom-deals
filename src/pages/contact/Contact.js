@@ -86,7 +86,7 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-4 mt-2">
                 <img src="./images/phone.png" width={"20px"} alt="" />
-                <span>0328 8888 090</span>
+                <span>0325 8888 090</span>
               </div>
 
               <a

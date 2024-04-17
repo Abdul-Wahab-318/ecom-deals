@@ -16,7 +16,7 @@ export default function Stories() {
     const fetchData = async () => {
         try{
             setIsLoading(true)
-            let { data } = await axios.get(URL)
+            let { data } = await axios.get(URL+"?sheet=Sheet2")
             setVideos(data.data)
             console.log(data)
         }

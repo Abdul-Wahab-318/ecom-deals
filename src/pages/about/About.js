@@ -40,7 +40,7 @@ export default function About() {
                             <img src={building} width="40px" alt="" />
                             </div>
                             <h5 className="text-purple text-lg lg:text-xl font-bold">
-                            Cutting-edge IT Training and Consultancy Services
+                            Cutting-edge E-commerce service
                             </h5>
                         </div>
                         <div className="choose-us-highlights flex-col text-center sm:text-start sm:flex-row flex items-center gap-3 mt-4" data-aos="fade-in"

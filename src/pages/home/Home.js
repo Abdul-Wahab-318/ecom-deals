@@ -27,7 +27,7 @@ export default function Home() {
   const fetchData = async () => {
     try {
       setIsLoading(true)
-      let { data } = await axios.get(URL)
+      let { data } = await axios.get(URL+"?sheet=Sheet1")
       setVideos(data.data)
       console.log(data)
     } catch (err) {

@@ -1,2 +1,2 @@
-const URL = "https://script.google.com/macros/s/AKfycbw69XFLrrHV-U25BnQTz23OZMaKb9jqKMIKd-EfaqUrupBoxm-RrPjrS58hP4W_WuN2_g/exec"
+const URL = "https://script.google.com/macros/s/AKfycbx0Q2u2oNMqdUxHORwITqiMJh8Krf4qdfftNheelRj-VbKV8DTSHH1RGIPreteugISVNw/exec"
 export default URL
