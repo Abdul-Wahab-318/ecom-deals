@@ -22,15 +22,7 @@ export default function About() {
                         </div>
                         <div className="choose-us-content">
                             <p className="mt-5 text-gray " style={{ textAlign: "justify" }}>
-                            Transformatics Pvt Ltd offers high-quality training programs and
-                            IT consultancy services to bridge the gap between academia and the
-                            industry. Our unique approach trains individuals on relevant tools
-                            and technologies, providing in-depth understanding of the
-                            industry, and making them job-ready from day one. <br /> <br /> We
-                            also offer corporate training programs leading to certification
-                            paths to help companies improve the skills and knowledge of their
-                            staff, leading to increased productivity and a competitive edge in
-                            the market.
+                            At Ecom Deals, we specialize in e-commerce solutions, offering tailored strategies to cash up your investments, and providing comprehensive e-commerce training. Our mission is to empower our clients with the knowledge and tools they need to succeed in both local and international e-commerce markets.
                             </p>
                         </div>
                     </div>
@@ -80,7 +72,7 @@ export default function About() {
                         <br /> <br />
                         Our mission is to “Create Future Enterpurners”
                         <br /> <br />
-                        With over 250+ Successful entrepreneurs we have enabled 1000+ jobs in the market. Our students have earned at an average PKR 2 Lakhs to 4 Lakhs in their 1st month. 
+                        With over 300+ Successful entrepreneurs we have enabled 1000+ jobs in the market. Our students have earned at an average PKR 2 Lakhs to 4 Lakhs in their 1st month. 
 
 
                         </p>

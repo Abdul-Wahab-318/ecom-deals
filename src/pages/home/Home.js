@@ -136,19 +136,18 @@ export default function Home() {
             <h1>What We Do</h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+          <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
+              <div><img src={shopify} className="inline" width={'100px'} alt="" /></div>
+              <h3 className="text-xl font-bold">Shopify Local & International Store Building</h3>
+            </div>
             <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
               <div><img src={marketing} className="inline" width={'100px'} alt="" /></div>
               <h3 className="text-xl font-bold "> Digital Marketing using Meta & Tiktok </h3>
             </div>
             <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
               <div><img src={creative} className="inline" width={'140px'} alt="" /></div>
-              <h3 className="text-xl font-bold ">Help you make your own creative</h3>
+              <h3 className="text-xl font-bold ">Top Tier Ad-Creative Making</h3>
             </div>
-            <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
-              <div><img src={statistics } className="inline" width={'140px'} alt="" /></div>
-              <h3 className="text-xl font-bold ">Reduce return ratio</h3>
-            </div>
-
             <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
                 <div><img src={orderFulfillment} className="inline" width={'140px'} alt="" /></div>
                 <h3 className="text-xl font-bold ">Order Fullfilment</h3>
@@ -159,8 +158,8 @@ export default function Home() {
               <h3 className="text-xl font-bold ">Packaging and Tracking</h3>
             </div>
             <div className="grid-card text-center p-10 bg-[#f5f5f5] rounded-lg flex flex-col items-center   ">
-              <div><img src={shopify} className="inline" width={'100px'} alt="" /></div>
-              <h3 className="text-xl font-bold">Shopify Local & International Store Building</h3>
+              <div><img src={statistics } className="inline" width={'140px'} alt="" /></div>
+              <h3 className="text-xl font-bold ">Reduce return ratio</h3>
             </div>
           </div>
 
@@ -186,34 +185,6 @@ export default function Home() {
               itemClass="px-[10px] lg:px-[25px]"
               
             >
-              <div className="service-card " >
-                <div className="service-card-inner">
-                  <div>
-                    <img
-                      src={silverStar}
-                      className="mx-auto"
-                      alt="training icon"
-                    />
-                    <h4 className="fw-bold mt-3 text-black mt-4 font-semibold">
-                      Silver Package
-                    </h4>
-                  </div>
-                  <ul className="package-list">
-                    <li>
-                      <span>2 Weeks Program</span>
-                    </li>
-                    <li>
-                      <span> 2 hours a day on-site bootcamp</span>
-                    </li>
-                  </ul>
-                  <Link
-                    className="generic-btn-1 mt-2 mx-auto w-50"
-                    to="/package/silver"
-                  >
-                    Explore
-                  </Link>
-                </div>
-              </div>
               <div className="service-card ">
                 <div className="service-card-inner">
                     <div>
@@ -311,6 +282,34 @@ export default function Home() {
                   <Link
                     className="generic-btn-1 mt-2 mx-auto w-50"
                     to="/package/bootcamp"
+                  >
+                    Explore
+                  </Link>
+                </div>
+              </div>
+              <div className="service-card " >
+                <div className="service-card-inner">
+                  <div>
+                    <img
+                      src={silverStar}
+                      className="mx-auto"
+                      alt="training icon"
+                    />
+                    <h4 className="fw-bold mt-3 text-black mt-4 font-semibold">
+                      Silver Package
+                    </h4>
+                  </div>
+                  <ul className="package-list">
+                    <li>
+                      <span>2 Weeks Program</span>
+                    </li>
+                    <li>
+                      <span> 2 hours a day on-site bootcamp</span>
+                    </li>
+                  </ul>
+                  <Link
+                    className="generic-btn-1 mt-2 mx-auto w-50"
+                    to="/package/silver"
                   >
                     Explore
                   </Link>

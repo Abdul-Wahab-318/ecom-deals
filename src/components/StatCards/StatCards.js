@@ -25,7 +25,7 @@ export default function StatCards() {
             {" "}
             
             <span className="counter">
-            <CountUp start={viewPortEntered ? null : 0} end={250}>
+            <CountUp start={viewPortEntered ? null : 0} end={300}>
                 {({ countUpRef }) => {
                     return (
                     <VisibilitySensor
@@ -57,7 +57,7 @@ export default function StatCards() {
         <div>
             <h1 className="mt-4 text-3xl lg:text-4xl font-bold text-purple">
             <span className="counter" >
-            <CountUp start={viewPortEntered ? null : 0} end={300}>
+            <CountUp start={viewPortEntered ? null : 0} end={400}>
                 {({ countUpRef }) => {
                     return (
                     <VisibilitySensor
